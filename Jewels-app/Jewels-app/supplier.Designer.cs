@@ -29,21 +29,31 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            panel1 = new Panel();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(361, 207);
+            label1.Location = new Point(298, 135);
             label1.Name = "label1";
             label1.Size = new Size(77, 25);
             label1.TabIndex = 0;
             label1.Text = "Supplier";
             // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.Location = new Point(352, 307);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(300, 150);
+            panel1.TabIndex = 1;
+            // 
             // supplier
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(panel1);
             Controls.Add(label1);
             Name = "supplier";
             Size = new Size(830, 477);
@@ -54,5 +64,6 @@
         #endregion
 
         private Label label1;
+        private Panel panel1;
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Configuration;
+using Microsoft.Data.SqlClient;
 
 namespace Jewels_app
 {
@@ -32,7 +33,7 @@ namespace Jewels_app
         {
             try
             {
-                using (var connection = new System.Data.SqlClient.SqlConnection(GetConnectionString()))
+                using (var connection = new SqlConnection(GetConnectionString()))
                 {
                     connection.Open();
                     return true;

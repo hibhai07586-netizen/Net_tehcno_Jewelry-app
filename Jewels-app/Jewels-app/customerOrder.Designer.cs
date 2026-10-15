@@ -34,7 +34,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(319, 220);
+            label1.Location = new Point(124, 103);
             label1.Name = "label1";
             label1.Size = new Size(140, 25);
             label1.TabIndex = 0;
@@ -46,7 +46,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(label1);
             Name = "customerOrder";
-            Size = new Size(779, 466);
+            Size = new Size(824, 466);
             ResumeLayout(false);
             PerformLayout();
         }
