@@ -46,7 +46,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(label1);
             Name = "customer";
-            Size = new Size(865, 475);
+            Size = new Size(981, 417);
+            Load += customer_Load;
             ResumeLayout(false);
             PerformLayout();
         }

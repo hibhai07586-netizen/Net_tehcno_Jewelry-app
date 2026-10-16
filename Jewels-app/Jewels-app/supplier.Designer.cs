@@ -30,6 +30,7 @@
         {
             label1 = new Label();
             panel1 = new Panel();
+            sqlDataAdapter1 = new Microsoft.Data.SqlClient.SqlDataAdapter();
             SuspendLayout();
             // 
             // label1
@@ -65,5 +66,6 @@
 
         private Label label1;
         private Panel panel1;
+        private Microsoft.Data.SqlClient.SqlDataAdapter sqlDataAdapter1;
     }
 }

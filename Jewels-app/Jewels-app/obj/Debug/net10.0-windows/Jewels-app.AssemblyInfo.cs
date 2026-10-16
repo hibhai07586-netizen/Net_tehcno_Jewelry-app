@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Jewels-app")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64c862988541def236d194b5d63bacf89bed0a00")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d02907114f531faca87fe88efbe5c1743887911")]
 [assembly: System.Reflection.AssemblyProductAttribute("Jewels-app")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Jewels-app")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -19,5 +19,10 @@ namespace Jewels_app
         {
 
         }
+
+        private void customer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

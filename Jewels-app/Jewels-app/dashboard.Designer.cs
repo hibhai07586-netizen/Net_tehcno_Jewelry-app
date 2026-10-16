@@ -350,7 +350,7 @@
             // 
             // Layout
             // 
-            Layout.BackColor = Color.Red;
+            Layout.BackColor = Color.White;
             Layout.Dock = DockStyle.Fill;
             Layout.Location = new Point(342, 88);
             Layout.Name = "Layout";
