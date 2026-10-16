@@ -58,6 +58,7 @@
             Controls.Add(label1);
             Name = "supplier";
             Size = new Size(830, 477);
+            Load += supplier_Load;
             ResumeLayout(false);
             PerformLayout();
         }

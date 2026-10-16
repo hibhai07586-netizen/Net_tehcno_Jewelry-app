@@ -65,6 +65,13 @@
             panel10 = new Panel();
             pictureBox5 = new PictureBox();
             label16 = new Label();
+            panel11 = new Panel();
+            flowLayoutPanel6 = new FlowLayoutPanel();
+            label17 = new Label();
+            label18 = new Label();
+            panel12 = new Panel();
+            pictureBox6 = new PictureBox();
+            label19 = new Label();
             panel1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -85,17 +92,22 @@
             flowLayoutPanel5.SuspendLayout();
             panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            panel11.SuspendLayout();
+            flowLayoutPanel6.SuspendLayout();
+            panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Historic", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(40, 40, 40);
             label1.Location = new Point(43, 10);
             label1.Name = "label1";
             label1.Size = new Size(311, 65);
             label1.TabIndex = 0;
-            label1.Text = "DASHBAORD";
+            label1.Text = "DASHBOARD";
             // 
             // panel1
             // 
@@ -106,6 +118,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(387, 218);
             panel1.TabIndex = 1;
+            panel1.Paint += panel2_Paint;
             // 
             // flowLayoutPanel1
             // 
@@ -144,7 +157,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(300, 87);
             panel2.TabIndex = 2;
-            panel2.Paint += panel2_Paint;
             // 
             // pictureBox1
             // 
@@ -175,6 +187,7 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(387, 218);
             panel3.TabIndex = 1;
+            panel3.Paint += panel2_Paint;
             // 
             // flowLayoutPanel2
             // 
@@ -213,7 +226,6 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(300, 87);
             panel4.TabIndex = 2;
-            panel4.Paint += panel2_Paint;
             // 
             // pictureBox2
             // 
@@ -244,6 +256,7 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(387, 218);
             panel5.TabIndex = 1;
+            panel5.Paint += panel2_Paint;
             // 
             // flowLayoutPanel3
             // 
@@ -282,7 +295,6 @@
             panel6.Name = "panel6";
             panel6.Size = new Size(318, 87);
             panel6.TabIndex = 2;
-            panel6.Paint += panel2_Paint;
             // 
             // pictureBox3
             // 
@@ -313,6 +325,7 @@
             panel7.Name = "panel7";
             panel7.Size = new Size(387, 218);
             panel7.TabIndex = 1;
+            panel7.Paint += panel2_Paint;
             // 
             // flowLayoutPanel4
             // 
@@ -347,11 +360,10 @@
             // 
             panel8.Controls.Add(pictureBox4);
             panel8.Controls.Add(label13);
-            panel8.Location = new Point(45, 14);
+            panel8.Location = new Point(27, 12);
             panel8.Name = "panel8";
-            panel8.Size = new Size(300, 87);
+            panel8.Size = new Size(339, 87);
             panel8.TabIndex = 2;
-            panel8.Paint += panel2_Paint;
             // 
             // pictureBox4
             // 
@@ -382,6 +394,7 @@
             panel9.Name = "panel9";
             panel9.Size = new Size(387, 218);
             panel9.TabIndex = 1;
+            panel9.Paint += panel2_Paint;
             // 
             // flowLayoutPanel5
             // 
@@ -389,7 +402,7 @@
             flowLayoutPanel5.Controls.Add(label15);
             flowLayoutPanel5.Location = new Point(98, 135);
             flowLayoutPanel5.Name = "flowLayoutPanel5";
-            flowLayoutPanel5.Size = new Size(227, 45);
+            flowLayoutPanel5.Size = new Size(254, 45);
             flowLayoutPanel5.TabIndex = 4;
             // 
             // label14
@@ -406,7 +419,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.Location = new Point(3, 32);
+            label15.Location = new Point(136, 0);
             label15.Name = "label15";
             label15.Size = new Size(103, 38);
             label15.TabIndex = 1;
@@ -420,7 +433,6 @@
             panel10.Name = "panel10";
             panel10.Size = new Size(339, 87);
             panel10.TabIndex = 2;
-            panel10.Paint += panel2_Paint;
             // 
             // pictureBox5
             // 
@@ -442,10 +454,81 @@
             label16.TabIndex = 0;
             label16.Text = "Total Customer";
             // 
+            // panel11
+            // 
+            panel11.BackColor = Color.Khaki;
+            panel11.Controls.Add(flowLayoutPanel6);
+            panel11.Controls.Add(panel12);
+            panel11.Location = new Point(962, 383);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(387, 218);
+            panel11.TabIndex = 1;
+            panel11.Paint += panel2_Paint;
+            // 
+            // flowLayoutPanel6
+            // 
+            flowLayoutPanel6.Controls.Add(label17);
+            flowLayoutPanel6.Controls.Add(label18);
+            flowLayoutPanel6.Location = new Point(98, 135);
+            flowLayoutPanel6.Name = "flowLayoutPanel6";
+            flowLayoutPanel6.Size = new Size(254, 45);
+            flowLayoutPanel6.TabIndex = 4;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.Location = new Point(3, 0);
+            label17.Name = "label17";
+            label17.Size = new Size(127, 32);
+            label17.TabIndex = 0;
+            label17.Text = "10,999,999";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label18.Location = new Point(136, 0);
+            label18.Name = "label18";
+            label18.Size = new Size(103, 38);
+            label18.TabIndex = 1;
+            label18.Text = "People";
+            // 
+            // panel12
+            // 
+            panel12.Controls.Add(pictureBox6);
+            panel12.Controls.Add(label19);
+            panel12.Location = new Point(32, 12);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(339, 87);
+            panel12.TabIndex = 2;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(0, 0);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(75, 75);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 3;
+            pictureBox6.TabStop = false;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label19.Location = new Point(103, 14);
+            label19.Name = "label19";
+            label19.Size = new Size(219, 45);
+            label19.TabIndex = 0;
+            label19.Text = "Total Supplier";
+            // 
             // dahbaord
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(253, 251, 247);
+            Controls.Add(panel11);
             Controls.Add(panel9);
             Controls.Add(panel7);
             Controls.Add(panel5);
@@ -454,6 +537,7 @@
             Controls.Add(label1);
             Name = "dahbaord";
             Size = new Size(1531, 858);
+            Load += dahbaord_Load;
             panel1.ResumeLayout(false);
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
@@ -484,6 +568,12 @@
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            panel11.ResumeLayout(false);
+            flowLayoutPanel6.ResumeLayout(false);
+            flowLayoutPanel6.PerformLayout();
+            panel12.ResumeLayout(false);
+            panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -526,5 +616,12 @@
         private Panel panel10;
         private PictureBox pictureBox5;
         private Label label16;
+        private Panel panel11;
+        private FlowLayoutPanel flowLayoutPanel6;
+        private Label label17;
+        private Label label18;
+        private Panel panel12;
+        private PictureBox pictureBox6;
+        private Label label19;
     }
 }
