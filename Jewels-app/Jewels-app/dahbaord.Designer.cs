@@ -72,10 +72,14 @@
             panel12 = new Panel();
             pictureBox6 = new PictureBox();
             label19 = new Label();
-            flowLayoutPanel7 = new FlowLayoutPanel();
-            label20 = new Label();
             flowLayoutPanel8 = new FlowLayoutPanel();
             label21 = new Label();
+            panel13 = new Panel();
+            panel14 = new Panel();
+            label20 = new Label();
+            panel15 = new Panel();
+            label22 = new Label();
+            dataGridView1 = new DataGridView();
             panel1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -100,8 +104,10 @@
             flowLayoutPanel6.SuspendLayout();
             panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            flowLayoutPanel7.SuspendLayout();
             flowLayoutPanel8.SuspendLayout();
+            panel14.SuspendLayout();
+            panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -529,35 +535,12 @@
             label19.TabIndex = 0;
             label19.Text = "Total Supplier";
             // 
-            // flowLayoutPanel7
-            // 
-            flowLayoutPanel7.AutoScroll = true;
-            flowLayoutPanel7.BackColor = Color.FromArgb(255, 247, 237);
-            flowLayoutPanel7.BorderStyle = BorderStyle.FixedSingle;
-            flowLayoutPanel7.Controls.Add(label20);
-            flowLayoutPanel7.Location = new Point(57, 664);
-            flowLayoutPanel7.Name = "flowLayoutPanel7";
-            flowLayoutPanel7.Size = new Size(1394, 767);
-            flowLayoutPanel7.TabIndex = 5;
-            flowLayoutPanel7.Paint += panel3_Paint;
-            // 
-            // label20
-            // 
-            label20.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            label20.AutoSize = true;
-            label20.Location = new Point(3, 0);
-            label20.Name = "label20";
-            label20.Size = new Size(69, 25);
-            label20.TabIndex = 0;
-            label20.Text = "label20";
-            label20.Click += label20_Click;
-            // 
             // flowLayoutPanel8
             // 
             flowLayoutPanel8.AutoScroll = true;
             flowLayoutPanel8.BackColor = Color.FromArgb(255, 224, 192);
             flowLayoutPanel8.Controls.Add(label21);
-            flowLayoutPanel8.Location = new Point(57, 1437);
+            flowLayoutPanel8.Location = new Point(61, 1692);
             flowLayoutPanel8.Name = "flowLayoutPanel8";
             flowLayoutPanel8.Size = new Size(1394, 116);
             flowLayoutPanel8.TabIndex = 2;
@@ -573,6 +556,71 @@
             label21.Text = "Power by Group 2/ .Net Technology major /South-East Asia";
             label21.Click += label20_Click;
             // 
+            // panel13
+            // 
+            panel13.BackColor = Color.FromArgb(254, 243, 198);
+            panel13.Location = new Point(18, 53);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(633, 389);
+            panel13.TabIndex = 3;
+            panel13.Paint += panel3_Paint;
+            // 
+            // panel14
+            // 
+            panel14.BackColor = Color.FromArgb(255, 247, 237);
+            panel14.Controls.Add(label20);
+            panel14.Controls.Add(panel13);
+            panel14.Location = new Point(39, 641);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(672, 442);
+            panel14.TabIndex = 4;
+            panel14.Paint += panel14_Paint;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(22, 21);
+            label20.Name = "label20";
+            label20.Size = new Size(116, 25);
+            label20.TabIndex = 4;
+            label20.Text = "Total revenue";
+            label20.Click += label20_Click_1;
+            // 
+            // panel15
+            // 
+            panel15.BackColor = Color.FromArgb(255, 247, 237);
+            panel15.Controls.Add(dataGridView1);
+            panel15.Controls.Add(label22);
+            panel15.Location = new Point(39, 1106);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(672, 442);
+            panel15.TabIndex = 4;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Location = new Point(18, 15);
+            label22.Name = "label22";
+            label22.Size = new Size(165, 25);
+            label22.TabIndex = 4;
+            label22.Text = "Best Saling Product";
+            label22.Click += label20_Click_1;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToResizeColumns = false;
+            dataGridView1.BackgroundColor = Color.White;
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridView1.ColumnHeadersHeight = 34;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridView1.Location = new Point(18, 70);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.Size = new Size(640, 356);
+            dataGridView1.TabIndex = 5;
+            // 
             // dahbaord
             // 
             AllowDrop = true;
@@ -580,8 +628,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.FromArgb(253, 251, 247);
+            Controls.Add(panel15);
+            Controls.Add(panel14);
             Controls.Add(flowLayoutPanel8);
-            Controls.Add(flowLayoutPanel7);
             Controls.Add(panel11);
             Controls.Add(panel9);
             Controls.Add(panel7);
@@ -590,7 +639,7 @@
             Controls.Add(panel1);
             Controls.Add(label1);
             Name = "dahbaord";
-            Size = new Size(1531, 1567);
+            Size = new Size(1531, 1808);
             Load += dahbaord_Load;
             panel1.ResumeLayout(false);
             flowLayoutPanel1.ResumeLayout(false);
@@ -628,10 +677,13 @@
             panel12.ResumeLayout(false);
             panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            flowLayoutPanel7.ResumeLayout(false);
-            flowLayoutPanel7.PerformLayout();
             flowLayoutPanel8.ResumeLayout(false);
             flowLayoutPanel8.PerformLayout();
+            panel14.ResumeLayout(false);
+            panel14.PerformLayout();
+            panel15.ResumeLayout(false);
+            panel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -681,9 +733,13 @@
         private Panel panel12;
         private PictureBox pictureBox6;
         private Label label19;
-        private FlowLayoutPanel flowLayoutPanel7;
-        private Label label20;
         private FlowLayoutPanel flowLayoutPanel8;
         private Label label21;
+        private Panel panel13;
+        private Panel panel14;
+        private Label label20;
+        private Panel panel15;
+        private Label label22;
+        private DataGridView dataGridView1;
     }
 }

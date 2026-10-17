@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EeEWNnkJ2MA=",
+  "dgSpecHash": "Iwp/Vu9+pJI=",
   "success": true,
   "projectFilePath": "C:\\Users\\DELL\\source\\repos\\hibhai07586-netizen\\Net_tehcno_Jewelry-app\\Jewels-app\\Jewels-app\\Jewels-app.csproj",
   "expectedPackageFiles": [
@@ -23,7 +23,8 @@
     "C:\\Users\\DELL\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.35.0\\system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.io.filesystem.accesscontrol\\5.0.0\\system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\system.runtime.caching\\8.0.0\\system.runtime.caching.8.0.0.nupkg.sha512"
+    "C:\\Users\\DELL\\.nuget\\packages\\system.runtime.caching\\8.0.0\\system.runtime.caching.8.0.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\winforms.datavisualization\\1.10.2\\winforms.datavisualization.1.10.2.nupkg.sha512"
   ],
   "logs": [
     {
