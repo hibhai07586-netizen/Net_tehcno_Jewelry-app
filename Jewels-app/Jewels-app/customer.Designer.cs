@@ -29,24 +29,36 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(386, 242);
+            label1.Location = new Point(118, 43);
             label1.Name = "label1";
             label1.Size = new Size(89, 25);
             label1.TabIndex = 0;
             label1.Text = "Customer";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(865, 43);
+            label2.Name = "label2";
+            label2.Size = new Size(128, 25);
+            label2.TabIndex = 1;
+            label2.Text = "Add Customer";
+            label2.Click += label2_Click;
+            // 
             // customer
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(label2);
             Controls.Add(label1);
             Name = "customer";
-            Size = new Size(981, 417);
+            Size = new Size(1084, 417);
             Load += customer_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -55,5 +67,6 @@
         #endregion
 
         private Label label1;
+        private Label label2;
     }
 }

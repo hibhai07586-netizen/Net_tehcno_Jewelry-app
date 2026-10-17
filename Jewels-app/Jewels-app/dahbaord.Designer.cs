@@ -72,6 +72,10 @@
             panel12 = new Panel();
             pictureBox6 = new PictureBox();
             label19 = new Label();
+            flowLayoutPanel7 = new FlowLayoutPanel();
+            label20 = new Label();
+            flowLayoutPanel8 = new FlowLayoutPanel();
+            label21 = new Label();
             panel1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -96,6 +100,8 @@
             flowLayoutPanel6.SuspendLayout();
             panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            flowLayoutPanel7.SuspendLayout();
+            flowLayoutPanel8.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -103,7 +109,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Historic", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(40, 40, 40);
-            label1.Location = new Point(43, 10);
+            label1.Location = new Point(57, 13);
             label1.Name = "label1";
             label1.Size = new Size(311, 65);
             label1.TabIndex = 0;
@@ -523,11 +529,59 @@
             label19.TabIndex = 0;
             label19.Text = "Total Supplier";
             // 
+            // flowLayoutPanel7
+            // 
+            flowLayoutPanel7.AutoScroll = true;
+            flowLayoutPanel7.BackColor = Color.FromArgb(255, 247, 237);
+            flowLayoutPanel7.BorderStyle = BorderStyle.FixedSingle;
+            flowLayoutPanel7.Controls.Add(label20);
+            flowLayoutPanel7.Location = new Point(57, 664);
+            flowLayoutPanel7.Name = "flowLayoutPanel7";
+            flowLayoutPanel7.Size = new Size(1394, 767);
+            flowLayoutPanel7.TabIndex = 5;
+            flowLayoutPanel7.Paint += panel3_Paint;
+            // 
+            // label20
+            // 
+            label20.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            label20.AutoSize = true;
+            label20.Location = new Point(3, 0);
+            label20.Name = "label20";
+            label20.Size = new Size(69, 25);
+            label20.TabIndex = 0;
+            label20.Text = "label20";
+            label20.Click += label20_Click;
+            // 
+            // flowLayoutPanel8
+            // 
+            flowLayoutPanel8.AutoScroll = true;
+            flowLayoutPanel8.BackColor = Color.FromArgb(255, 224, 192);
+            flowLayoutPanel8.Controls.Add(label21);
+            flowLayoutPanel8.Location = new Point(57, 1437);
+            flowLayoutPanel8.Name = "flowLayoutPanel8";
+            flowLayoutPanel8.Size = new Size(1394, 116);
+            flowLayoutPanel8.TabIndex = 2;
+            // 
+            // label21
+            // 
+            label21.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            label21.AutoSize = true;
+            label21.Location = new Point(3, 0);
+            label21.Name = "label21";
+            label21.Size = new Size(481, 25);
+            label21.TabIndex = 0;
+            label21.Text = "Power by Group 2/ .Net Technology major /South-East Asia";
+            label21.Click += label20_Click;
+            // 
             // dahbaord
             // 
+            AllowDrop = true;
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             BackColor = Color.FromArgb(253, 251, 247);
+            Controls.Add(flowLayoutPanel8);
+            Controls.Add(flowLayoutPanel7);
             Controls.Add(panel11);
             Controls.Add(panel9);
             Controls.Add(panel7);
@@ -536,7 +590,7 @@
             Controls.Add(panel1);
             Controls.Add(label1);
             Name = "dahbaord";
-            Size = new Size(1531, 858);
+            Size = new Size(1531, 1567);
             Load += dahbaord_Load;
             panel1.ResumeLayout(false);
             flowLayoutPanel1.ResumeLayout(false);
@@ -574,6 +628,10 @@
             panel12.ResumeLayout(false);
             panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            flowLayoutPanel7.ResumeLayout(false);
+            flowLayoutPanel7.PerformLayout();
+            flowLayoutPanel8.ResumeLayout(false);
+            flowLayoutPanel8.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -623,5 +681,9 @@
         private Panel panel12;
         private PictureBox pictureBox6;
         private Label label19;
+        private FlowLayoutPanel flowLayoutPanel7;
+        private Label label20;
+        private FlowLayoutPanel flowLayoutPanel8;
+        private Label label21;
     }
 }

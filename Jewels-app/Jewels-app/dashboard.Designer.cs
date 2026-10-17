@@ -408,6 +408,7 @@
             // 
             // Layout
             // 
+            Layout.AutoScroll = true;
             Layout.BackColor = Color.FromArgb(253, 251, 247);
             Layout.Dock = DockStyle.Fill;
             Layout.Location = new Point(359, 95);

@@ -24,5 +24,10 @@ namespace Jewels_app
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
