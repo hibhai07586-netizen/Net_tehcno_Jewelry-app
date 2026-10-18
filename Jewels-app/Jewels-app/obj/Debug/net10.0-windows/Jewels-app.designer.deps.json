@@ -14,7 +14,8 @@
         "runtime": {
           "lib/net6.0/Azure.Core.dll": {
             "assemblyVersion": "1.35.0.0",
-            "fileVersion": "1.3500.23.45706"
+            "fileVersion": "1.3500.23.45706",
+            "localPath": "Azure.Core.dll"
           }
         }
       },
@@ -27,7 +28,8 @@
         "runtime": {
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.10.3.0",
-            "fileVersion": "1.1000.323.51804"
+            "fileVersion": "1.1000.323.51804",
+            "localPath": "Azure.Identity.dll"
           }
         }
       },
@@ -35,7 +37,8 @@
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "4.700.20.21406"
+            "fileVersion": "4.700.20.21406",
+            "localPath": "Microsoft.Bcl.AsyncInterfaces.dll"
           }
         }
       },
@@ -52,39 +55,50 @@
         "runtime": {
           "lib/net8.0/Microsoft.Data.SqlClient.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.20.24059.2"
+            "fileVersion": "5.20.24059.2",
+            "localPath": "Microsoft.Data.SqlClient.dll"
           }
         },
         "resources": {
           "lib/net8.0/de/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "de"
+            "locale": "de",
+            "localPath": "de/Microsoft.Data.SqlClient.resources.dll"
           },
           "lib/net8.0/es/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "es"
+            "locale": "es",
+            "localPath": "es/Microsoft.Data.SqlClient.resources.dll"
           },
           "lib/net8.0/fr/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "fr"
+            "locale": "fr",
+            "localPath": "fr/Microsoft.Data.SqlClient.resources.dll"
           },
           "lib/net8.0/it/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "it"
+            "locale": "it",
+            "localPath": "it/Microsoft.Data.SqlClient.resources.dll"
           },
           "lib/net8.0/ja/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "ja"
+            "locale": "ja",
+            "localPath": "ja/Microsoft.Data.SqlClient.resources.dll"
           },
           "lib/net8.0/ko/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "ko"
+            "locale": "ko",
+            "localPath": "ko/Microsoft.Data.SqlClient.resources.dll"
           },
           "lib/net8.0/pt-BR/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "pt-BR"
+            "locale": "pt-BR",
+            "localPath": "pt-BR/Microsoft.Data.SqlClient.resources.dll"
           },
           "lib/net8.0/ru/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "ru"
+            "locale": "ru",
+            "localPath": "ru/Microsoft.Data.SqlClient.resources.dll"
           },
           "lib/net8.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "zh-Hans"
+            "locale": "zh-Hans",
+            "localPath": "zh-Hans/Microsoft.Data.SqlClient.resources.dll"
           },
           "lib/net8.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "zh-Hant"
+            "locale": "zh-Hant",
+            "localPath": "zh-Hant/Microsoft.Data.SqlClient.resources.dll"
           }
         },
         "runtimeTargets": {
@@ -92,13 +106,15 @@
             "rid": "unix",
             "assetType": "runtime",
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.20.24059.2"
+            "fileVersion": "5.20.24059.2",
+            "localPath": "runtimes/unix/lib/net8.0/Microsoft.Data.SqlClient.dll"
           },
           "runtimes/win/lib/net8.0/Microsoft.Data.SqlClient.dll": {
             "rid": "win",
             "assetType": "runtime",
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.20.24059.2"
+            "fileVersion": "5.20.24059.2",
+            "localPath": "runtimes/win/lib/net8.0/Microsoft.Data.SqlClient.dll"
           }
         }
       },
@@ -107,22 +123,26 @@
           "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm",
             "assetType": "native",
-            "fileVersion": "5.2.0.0"
+            "fileVersion": "5.2.0.0",
+            "localPath": "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll"
           },
           "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "5.2.0.0"
+            "fileVersion": "5.2.0.0",
+            "localPath": "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll"
           },
           "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "5.2.0.0"
+            "fileVersion": "5.2.0.0",
+            "localPath": "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll"
           },
           "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "5.2.0.0"
+            "fileVersion": "5.2.0.0",
+            "localPath": "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
           }
         }
       },
@@ -135,7 +155,8 @@
         "runtime": {
           "lib/net6.0-windows7.0/Microsoft.Identity.Client.dll": {
             "assemblyVersion": "4.56.0.0",
-            "fileVersion": "4.56.0.0"
+            "fileVersion": "4.56.0.0",
+            "localPath": "Microsoft.Identity.Client.dll"
           }
         }
       },
@@ -147,7 +168,8 @@
         "runtime": {
           "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.dll": {
             "assemblyVersion": "4.56.0.0",
-            "fileVersion": "4.56.0.0"
+            "fileVersion": "4.56.0.0",
+            "localPath": "Microsoft.Identity.Client.Extensions.Msal.dll"
           }
         }
       },
@@ -155,24 +177,28 @@
         "runtime": {
           "lib/netstandard2.0/Microsoft.Identity.Client.NativeInterop.dll": {
             "assemblyVersion": "0.13.8.0",
-            "fileVersion": "0.13.8.0"
+            "fileVersion": "0.13.8.0",
+            "localPath": "Microsoft.Identity.Client.NativeInterop.dll"
           }
         },
         "runtimeTargets": {
           "runtimes/win-arm64/native/msalruntime_arm64.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-arm64/native/msalruntime_arm64.dll"
           },
           "runtimes/win-x64/native/msalruntime.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x64/native/msalruntime.dll"
           },
           "runtimes/win-x86/native/msalruntime_x86.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x86/native/msalruntime_x86.dll"
           }
         }
       },
@@ -180,7 +206,8 @@
         "runtime": {
           "lib/net6.0/Microsoft.IdentityModel.Abstractions.dll": {
             "assemblyVersion": "6.35.0.0",
-            "fileVersion": "6.35.0.41201"
+            "fileVersion": "6.35.0.41201",
+            "localPath": "Microsoft.IdentityModel.Abstractions.dll"
           }
         }
       },
@@ -191,7 +218,8 @@
         "runtime": {
           "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
             "assemblyVersion": "6.35.0.0",
-            "fileVersion": "6.35.0.41201"
+            "fileVersion": "6.35.0.41201",
+            "localPath": "Microsoft.IdentityModel.JsonWebTokens.dll"
           }
         }
       },
@@ -202,7 +230,8 @@
         "runtime": {
           "lib/net6.0/Microsoft.IdentityModel.Logging.dll": {
             "assemblyVersion": "6.35.0.0",
-            "fileVersion": "6.35.0.41201"
+            "fileVersion": "6.35.0.41201",
+            "localPath": "Microsoft.IdentityModel.Logging.dll"
           }
         }
       },
@@ -214,7 +243,8 @@
         "runtime": {
           "lib/net6.0/Microsoft.IdentityModel.Protocols.dll": {
             "assemblyVersion": "6.35.0.0",
-            "fileVersion": "6.35.0.41201"
+            "fileVersion": "6.35.0.41201",
+            "localPath": "Microsoft.IdentityModel.Protocols.dll"
           }
         }
       },
@@ -226,7 +256,8 @@
         "runtime": {
           "lib/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
             "assemblyVersion": "6.35.0.0",
-            "fileVersion": "6.35.0.41201"
+            "fileVersion": "6.35.0.41201",
+            "localPath": "Microsoft.IdentityModel.Protocols.OpenIdConnect.dll"
           }
         }
       },
@@ -237,7 +268,8 @@
         "runtime": {
           "lib/net6.0/Microsoft.IdentityModel.Tokens.dll": {
             "assemblyVersion": "6.35.0.0",
-            "fileVersion": "6.35.0.41201"
+            "fileVersion": "6.35.0.41201",
+            "localPath": "Microsoft.IdentityModel.Tokens.dll"
           }
         }
       },
@@ -245,7 +277,8 @@
         "runtime": {
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "fileVersion": "1.0.0.0",
+            "localPath": "Microsoft.SqlServer.Server.dll"
           }
         }
       },
@@ -253,32 +286,38 @@
         "runtime": {
           "lib/netcoreapp3.0/Microsoft.Web.WebView2.Core.dll": {
             "assemblyVersion": "1.0.864.35",
-            "fileVersion": "1.0.864.35"
+            "fileVersion": "1.0.864.35",
+            "localPath": "Microsoft.Web.WebView2.Core.dll"
           },
           "lib/netcoreapp3.0/Microsoft.Web.WebView2.WinForms.dll": {
             "assemblyVersion": "1.0.864.35",
-            "fileVersion": "1.0.864.35"
+            "fileVersion": "1.0.864.35",
+            "localPath": "Microsoft.Web.WebView2.WinForms.dll"
           },
           "lib/netcoreapp3.0/Microsoft.Web.WebView2.Wpf.dll": {
             "assemblyVersion": "1.0.864.35",
-            "fileVersion": "1.0.864.35"
+            "fileVersion": "1.0.864.35",
+            "localPath": "Microsoft.Web.WebView2.Wpf.dll"
           }
         },
         "runtimeTargets": {
           "runtimes/win-arm64/native/WebView2Loader.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "1.0.864.35"
+            "fileVersion": "1.0.864.35",
+            "localPath": "runtimes/win-arm64/native/WebView2Loader.dll"
           },
           "runtimes/win-x64/native/WebView2Loader.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "1.0.864.35"
+            "fileVersion": "1.0.864.35",
+            "localPath": "runtimes/win-x64/native/WebView2Loader.dll"
           },
           "runtimes/win-x86/native/WebView2Loader.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "1.0.864.35"
+            "fileVersion": "1.0.864.35",
+            "localPath": "runtimes/win-x86/native/WebView2Loader.dll"
           }
         }
       },
@@ -290,7 +329,8 @@
         "runtime": {
           "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll": {
             "assemblyVersion": "6.35.0.0",
-            "fileVersion": "6.35.0.41201"
+            "fileVersion": "6.35.0.41201",
+            "localPath": "System.IdentityModel.Tokens.Jwt.dll"
           }
         }
       },
@@ -298,7 +338,8 @@
         "runtime": {
           "lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
+            "fileVersion": "5.0.20.51904",
+            "localPath": "System.IO.FileSystem.AccessControl.dll"
           }
         },
         "runtimeTargets": {
@@ -306,7 +347,8 @@
             "rid": "win",
             "assetType": "runtime",
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
+            "fileVersion": "5.0.20.51904",
+            "localPath": "runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll"
           }
         }
       },
@@ -314,7 +356,8 @@
         "runtime": {
           "lib/netstandard2.0/System.Memory.Data.dll": {
             "assemblyVersion": "1.0.2.0",
-            "fileVersion": "1.0.221.20802"
+            "fileVersion": "1.0.221.20802",
+            "localPath": "System.Memory.Data.dll"
           }
         }
       },
@@ -322,7 +365,8 @@
         "runtime": {
           "lib/net8.0/System.Runtime.Caching.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+            "fileVersion": "8.0.23.53103",
+            "localPath": "System.Runtime.Caching.dll"
           }
         },
         "runtimeTargets": {
@@ -330,7 +374,8 @@
             "rid": "win",
             "assetType": "runtime",
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+            "fileVersion": "8.0.23.53103",
+            "localPath": "runtimes/win/lib/net8.0/System.Runtime.Caching.dll"
           }
         }
       },
@@ -338,11 +383,13 @@
         "runtime": {
           "lib/net9.0-windows7.0/WinForms.DataVisualization.Utilities.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.10.2.0"
+            "fileVersion": "1.10.2.0",
+            "localPath": "WinForms.DataVisualization.Utilities.dll"
           },
           "lib/net9.0-windows7.0/WinForms.DataVisualization.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.10.2.0"
+            "fileVersion": "1.10.2.0",
+            "localPath": "WinForms.DataVisualization.dll"
           }
         }
       }

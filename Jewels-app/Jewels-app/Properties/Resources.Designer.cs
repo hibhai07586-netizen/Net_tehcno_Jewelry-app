@@ -83,6 +83,16 @@ namespace Jewels_app.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fa_solid__users {
+            get {
+                object obj = ResourceManager.GetObject("fa-solid--users", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Jewels_logo {
             get {
                 object obj = ResourceManager.GetObject("Jewels-logo", resourceCulture);
