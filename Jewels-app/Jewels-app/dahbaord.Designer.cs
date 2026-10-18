@@ -78,8 +78,9 @@
             panel14 = new Panel();
             label20 = new Label();
             panel15 = new Panel();
-            label22 = new Label();
             dataGridView1 = new DataGridView();
+            label22 = new Label();
+            panel16 = new Panel();
             panel1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -426,6 +427,7 @@
             label14.Size = new Size(127, 32);
             label14.TabIndex = 0;
             label14.Text = "10,999,999";
+            label14.Click += label14_Click;
             // 
             // label15
             // 
@@ -596,16 +598,6 @@
             panel15.Size = new Size(672, 442);
             panel15.TabIndex = 4;
             // 
-            // label22
-            // 
-            label22.AutoSize = true;
-            label22.Location = new Point(18, 15);
-            label22.Name = "label22";
-            label22.Size = new Size(165, 25);
-            label22.TabIndex = 4;
-            label22.Text = "Best Saling Product";
-            label22.Click += label20_Click_1;
-            // 
             // dataGridView1
             // 
             dataGridView1.AllowUserToAddRows = false;
@@ -621,6 +613,24 @@
             dataGridView1.Size = new Size(640, 356);
             dataGridView1.TabIndex = 5;
             // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Location = new Point(18, 15);
+            label22.Name = "label22";
+            label22.Size = new Size(177, 25);
+            label22.TabIndex = 4;
+            label22.Text = "Best Salling Products";
+            label22.Click += label20_Click_1;
+            // 
+            // panel16
+            // 
+            panel16.BackColor = Color.FromArgb(255, 224, 192);
+            panel16.Location = new Point(782, 641);
+            panel16.Name = "panel16";
+            panel16.Size = new Size(567, 442);
+            panel16.TabIndex = 5;
+            // 
             // dahbaord
             // 
             AllowDrop = true;
@@ -628,6 +638,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.FromArgb(253, 251, 247);
+            Controls.Add(panel16);
             Controls.Add(panel15);
             Controls.Add(panel14);
             Controls.Add(flowLayoutPanel8);
@@ -741,5 +752,6 @@
         private Panel panel15;
         private Label label22;
         private DataGridView dataGridView1;
+        private Panel panel16;
     }
 }
