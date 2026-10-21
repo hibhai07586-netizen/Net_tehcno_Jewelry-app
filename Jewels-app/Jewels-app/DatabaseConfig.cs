@@ -1,6 +1,7 @@
 using System;
 using System.Configuration;
-using Microsoft.Data.SqlClient;
+// Change from Microsoft.Data.SqlClient to MySQL
+using MySql.Data.MySqlClient;
 
 namespace Jewels_app
 {
@@ -10,16 +11,16 @@ namespace Jewels_app
     /// </summary>
     public static class DatabaseConfig
     {
-        // Update this with your actual database connection string
-        public static string ConnectionString = 
-            "Server=YOUR_SERVER;Database=JewelsDB;User Id=sa;Password=YOUR_PASSWORD;";
+        // Your actual local MariaDB connection string
+        public static string ConnectionString =
+            "server=localhost;uid=root;pwd=;database=luxe_jewels_db";
 
-        // Or load from config file
+        // Load from config file (App.config / Web.config)
         public static string GetConnectionString()
         {
             try
             {
-                return ConfigurationManager.ConnectionStrings["JewelsDB"]?.ConnectionString 
+                return ConfigurationManager.ConnectionStrings["JewelsDB"]?.ConnectionString
                     ?? ConnectionString;
             }
             catch
@@ -33,7 +34,8 @@ namespace Jewels_app
         {
             try
             {
-                using (var connection = new SqlConnection(GetConnectionString()))
+                // Changed from SqlConnection to MySqlConnection
+                using (var connection = new MySqlConnection(GetConnectionString()))
                 {
                     connection.Open();
                     return true;

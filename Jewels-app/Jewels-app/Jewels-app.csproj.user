@@ -22,6 +22,9 @@
     <Compile Update="report.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="sale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="setting.cs">
       <SubType>UserControl</SubType>
     </Compile>
