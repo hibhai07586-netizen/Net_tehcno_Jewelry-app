@@ -14,5 +14,10 @@ namespace Jewels_app
         {
             InitializeComponent();
         }
+
+        private void Sale_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

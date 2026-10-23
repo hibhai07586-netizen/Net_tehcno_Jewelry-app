@@ -28,17 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            panel1 = new Panel();
             SuspendLayout();
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Red;
+            panel1.Location = new Point(328, 344);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(300, 150);
+            panel1.TabIndex = 0;
             // 
             // Sale
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(panel1);
             Name = "Sale";
             Size = new Size(1045, 638);
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Panel panel1;
     }
 }
