@@ -58,6 +58,9 @@
             pictureBox7 = new PictureBox();
             label4 = new Label();
             Layout = new Panel();
+            panel17 = new Panel();
+            label10 = new Label();
+            pictureBox11 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel3.SuspendLayout();
@@ -78,6 +81,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -149,6 +154,7 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(248, 238, 223);
+            panel2.Controls.Add(panel17);
             panel2.Controls.Add(panel9);
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(panel5);
@@ -169,7 +175,7 @@
             panel9.Controls.Add(label6);
             panel9.Cursor = Cursors.Hand;
             panel9.ForeColor = Color.FromArgb(40, 40, 40);
-            panel9.Location = new Point(29, 638);
+            panel9.Location = new Point(26, 743);
             panel9.Name = "panel9";
             panel9.Size = new Size(284, 80);
             panel9.TabIndex = 0;
@@ -274,7 +280,7 @@
             panel8.Controls.Add(label5);
             panel8.Cursor = Cursors.Hand;
             panel8.ForeColor = Color.FromArgb(40, 40, 40);
-            panel8.Location = new Point(29, 535);
+            panel8.Location = new Point(25, 640);
             panel8.Name = "panel8";
             panel8.Size = new Size(284, 80);
             panel8.TabIndex = 0;
@@ -417,6 +423,38 @@
             Layout.TabIndex = 1;
             Layout.Paint += Layout_Paint;
             // 
+            // panel17
+            // 
+            panel17.BackColor = Color.White;
+            panel17.Controls.Add(pictureBox11);
+            panel17.Controls.Add(label10);
+            panel17.Location = new Point(25, 542);
+            panel17.Name = "panel17";
+            panel17.Size = new Size(284, 80);
+            panel17.TabIndex = 1;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.Location = new Point(95, 23);
+            label10.Name = "label10";
+            label10.Size = new Size(59, 32);
+            label10.TabIndex = 0;
+            label10.Text = "Sale";
+            label10.TextAlign = ContentAlignment.MiddleCenter;
+            label10.Click += label9_Click;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
+            pictureBox11.Location = new Point(12, 11);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(53, 59);
+            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox11.TabIndex = 1;
+            pictureBox11.TabStop = false;
+            // 
             // home
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -456,6 +494,9 @@
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            panel17.ResumeLayout(false);
+            panel17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ResumeLayout(false);
         }
 
@@ -497,5 +538,8 @@
         private Panel panel16;
         private PictureBox pictureBox10;
         private Label label8;
+        private Panel panel17;
+        private PictureBox pictureBox11;
+        private Label label10;
     }
 }

@@ -24,32 +24,35 @@ namespace Jewels_app
 
         private void dashboard_Load(object sender, EventArgs e)
         {
-            // បន្ថែម click event ទៅលើ panel ម៉ឺនុយទាំងអស់ (រួមទាំង panel16)
+            // បន្ថែម click event ទៅលើ panel ម៉ឺនុយទាំងអស់ (រួមទាំង panel16 និង panel17)
             panel4.Click += MenuPanel_Click;
             panel5.Click += MenuPanel_Click;
             panel6.Click += MenuPanel_Click;
             panel7.Click += MenuPanel_Click;
             panel8.Click += MenuPanel_Click;
             panel9.Click += MenuPanel_Click;
-            panel16.Click += MenuPanel_Click; // ភ្ជាប់ Click Event រួចរាល់
+            panel16.Click += MenuPanel_Click;
+            panel17.Click += MenuPanel_Click; // 💡 ភ្ជាប់ Click Event សម្រាប់ម៉ឺនុយ Sale
 
-            // ភ្ជាប់មុខងារកាត់ជ្រុងមូលទៅកាន់ម៉ឺនុយប៊ូតុងនីមួយៗ (រួមទាំង panel16)
+            // ភ្ជាប់មុខងារកាត់ជ្រុងមូលទៅកាន់ម៉ឺនុយប៊ូតុងនីមួយៗ (រួមទាំង panel16 និង panel17)
             panel4.Paint += MenuPanel_Paint;
             panel5.Paint += MenuPanel_Paint;
             panel6.Paint += MenuPanel_Paint;
             panel7.Paint += MenuPanel_Paint;
             panel8.Paint += MenuPanel_Paint;
             panel9.Paint += MenuPanel_Paint;
-            panel16.Paint += MenuPanel_Paint; // 💡 បន្ថែមត្រង់នេះដើម្បីឱ្យ Supplier កាច់ជ្រុងមូលដែរ
+            panel16.Paint += MenuPanel_Paint;
+            panel17.Paint += MenuPanel_Paint; // 💡 បន្ថែមត្រង់នេះដើម្បីឱ្យម៉ឺនុយ Sale កាច់ជ្រុងមូលដែរ
 
-            // ធ្វើឱ្យ controls ខាងក្នុង panel ដើរតួជាអ្នកចុច panel ដែរ (រួមទាំង panel16)
+            // ធ្វើឱ្យ controls ខាងក្នុង panel ដើរតួជាអ្នកចុច panel ដែរ (រួមទាំង panel16 និង panel17)
             AttachClickHandlerToChildren(panel4);
             AttachClickHandlerToChildren(panel5);
             AttachClickHandlerToChildren(panel6);
             AttachClickHandlerToChildren(panel7);
             AttachClickHandlerToChildren(panel8);
             AttachClickHandlerToChildren(panel9);
-            AttachClickHandlerToChildren(panel16); // 💡 បន្ថែមត្រង់នេះដើម្បីឱ្យចុចចំរូប ឬអក្សរ Supplier ក៏ដើរដែរ
+            AttachClickHandlerToChildren(panel16);
+            AttachClickHandlerToChildren(panel17); // 💡 បន្ថែមត្រង់នេះដើម្បីឱ្យចុចចំរូប ឬអក្សរ Sale ក៏ដើរដែរ
 
             // កំណត់យក Dashboard ជាម៉ឺនុយដំបូងគេបង្អស់
             SelectMenuPanel(panel4);
@@ -156,11 +159,17 @@ namespace Jewels_app
                 orderControl.Dock = DockStyle.Fill;
                 Layout.Controls.Add(orderControl);
             }
-            else if (menuPanel == panel16) // 💡 រៀបចំលំដាប់លំដោយតាមរូបរាងអេក្រង់ (Supplier នៅពីលើ Report)
+            else if (menuPanel == panel16)
             {
                 supplier supplierControl = new supplier();
                 supplierControl.Dock = DockStyle.Fill;
                 Layout.Controls.Add(supplierControl);
+            }
+            else if (menuPanel == panel17) // 💡 បន្ថែមត្រង់នេះសម្រាប់បើក Sale UserControl នៅពេលចុច panel17
+            {
+                Sale saleControl = new Sale();
+                saleControl.Dock = DockStyle.Fill;
+                Layout.Controls.Add(saleControl);
             }
             else if (menuPanel == panel8)
             {
@@ -187,6 +196,7 @@ namespace Jewels_app
         private void label2_Click(object sender, EventArgs e) { }
         private void panel5_Paint(object sender, PaintEventArgs e) { }
         private void panel1_Paint(object sender, PaintEventArgs e) { }
-        private void panel16_Paint(object sender, PaintEventArgs e) { } // ទុកចោលធម្មតា លែងមាន Error
+        private void panel16_Paint(object sender, PaintEventArgs e) { }
+        private void panel17_Paint(object sender, PaintEventArgs e) { } // 💡 ទុកចោលការពារកុំឱ្យមាន Error ប្រសិនបើមានទំពក់ចាស់នៅក្នុង Designer
     }
 }
